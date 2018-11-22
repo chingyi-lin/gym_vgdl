@@ -371,6 +371,7 @@ class AStarChaser(RandomNPC):
         self.drawpath = path_sprites
     
     def update(self, game):
+        from .ai import AStarWorld
         VGDLSprite.update(self, game)
         
         world = AStarWorld(game)

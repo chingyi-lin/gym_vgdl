@@ -10,3 +10,8 @@ pip install -e .
 
 Then remember to `import gym_vgdl` and you can use the games as any other env using e.g. `env = gym.make('vgdlaliens-v0')`. New games can be added by grabbing the VGDL game and level descriptions and adding them to `gym_vgdl/vgdl/games`, and modifying `__init__.py`.
 
+About VGDL Language (https://github.com/EssexUniversityMCTS/gvgai/wiki/VGDL-Language)
+* SpriteSet Defines all available sprites for the game, including their parameters and display settings.
+* LevelMapping Defines relationships between characters, used in the level definitions, and the available sprites.
+* InteractionSet Specifies what events occur when two sprites of a given type collide in the game.
+* TerminationSet Specifies the end conditions of the game, indicating whether the player wins or not.

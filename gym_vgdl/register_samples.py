@@ -13,7 +13,8 @@ sample_games = [
     'missilecommand',
     'portals',
     'survivezombies',
-    'zelda' ]
+    'zelda',
+    'pacman' ]
 
 # A list of relevant classes for each sample game
 classes = {
@@ -26,7 +27,8 @@ classes = {
     'portals':        ['avatar',  'goal', 'portalentry', 'portalexit', 'random',
                        'straight', 'wall' ],
     'survivezombies': ['avatar', 'bee', 'flower', 'hell', 'honey', 'zombie'],
-    'zelda':          ['avatar', 'enemy', 'goal', 'key', 'wall']
+    'zelda':          ['avatar', 'enemy', 'goal', 'key', 'wall'],
+    'pacman':         ['hungry', 'powered', 'ghost', 'wall']
 }
 
 # A list of relevant resources for each sample game
@@ -38,7 +40,8 @@ resources = {
     'missilecommand': [],
     'portals':        [],
     'survivezombies': ['honey'],
-    'zelda':          []
+    'zelda':          [],
+    'pacman':         []
 }
 
 suffixes = {
@@ -49,6 +52,7 @@ suffixes = {
 
 # Register the sample games
 def register_sample_games():
+    print("Yo")
     for game in sample_games:
         for obs_type, suffix in suffixes.items():
             register(
@@ -65,3 +69,4 @@ def register_sample_games():
                 timestep_limit=1000,
                 nondeterministic=True,
             )
+            print("Registering vgdl_{}{}-v0".format(game, suffix))

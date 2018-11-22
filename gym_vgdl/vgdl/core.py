@@ -561,6 +561,8 @@ class VGDLSprite(object):
         self.speed = speed or self.speed
         self.cooldown = cooldown or self.cooldown
         self.img = 0
+        if random_generator == None:
+            random_generator = random.Random(1111)
         self.color = color or self.color or (random_generator.choice(self.COLOR_DISC), random_generator.choice(self.COLOR_DISC), random_generator.choice(self.COLOR_DISC))
 
         for name, value in kwargs.items():
