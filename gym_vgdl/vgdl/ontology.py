@@ -373,20 +373,18 @@ class AStarChaser(RandomNPC):
     def update(self, game):
         from .ai import AStarWorld
         VGDLSprite.update(self, game)
-        
+
         world = AStarWorld(game)
         path = world.getMoveFor(self)
         
         # Uncomment below to draw debug paths.
         # self._setDebugVariables(world,path)
-        
+        movement = None
         if len(path)>1:
             move = path[1]
             
             nextX, nextY = world.get_sprite_tile_position(move.sprite)
             nowX, nowY = world.get_sprite_tile_position(self)
-            
-            movement = None
             
             if nowX == nextX:
                 if nextY > nowY:

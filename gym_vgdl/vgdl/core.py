@@ -513,7 +513,7 @@ class BasicGame(object):
         for t in self.terminations:
             self.ended, win = t.isDone(self)
             if self.ended:
-                break
+                return
 
             if self.time > 1000:
                 self.ended = True

@@ -39,5 +39,5 @@ BasicGame
         4 > orangespawn orange
         
     TerminationSet
-        SpriteCounter stype=food   win=True     
-        SpriteCounter stype=pacman win=False
+        SpriteCounter stype=food   limit=0 win=True     
+        SpriteCounter stype=pacman limit=0 win=False
