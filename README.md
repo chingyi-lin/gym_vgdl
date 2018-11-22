@@ -3,7 +3,7 @@ Quick and dirty port of py-vgdl (https://github.com/schaul/py-vgdl) to work as a
 Install using pip:
 
 ```
-git clone https://github.com/EndingCredits/gym_vgdl.git
+git clone https://github.com/chingyi-lin/gym_vgdl.git
 cd gym_vgdl/
 pip install -e .
 ```
