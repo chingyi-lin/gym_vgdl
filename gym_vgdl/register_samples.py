@@ -14,7 +14,8 @@ sample_games = [
     'portals',
     'survivezombies',
     'zelda',
-    'pacman' ]
+    'pacman',
+    'ptsp' ]
 
 # A list of relevant classes for each sample game
 classes = {
@@ -28,7 +29,8 @@ classes = {
                        'straight', 'wall' ],
     'survivezombies': ['avatar', 'bee', 'flower', 'hell', 'honey', 'zombie'],
     'zelda':          ['avatar', 'enemy', 'goal', 'key', 'wall'],
-    'pacman':         ['hungry', 'powered', 'ghost', 'wall']
+    'pacman':         ['hungry', 'powered', 'ghost', 'wall'],
+    'ptsp':           ['avatar', 'inertial', 'wall', 'pad']
 }
 
 # A list of relevant resources for each sample game
@@ -41,7 +43,8 @@ resources = {
     'portals':        [],
     'survivezombies': ['honey'],
     'zelda':          [],
-    'pacman':         []
+    'pacman':         [],
+    'ptsp':           []
 }
 
 suffixes = {
