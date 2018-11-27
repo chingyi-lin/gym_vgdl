@@ -22,10 +22,10 @@ BasicGame
     InteractionSet
         hungry  power > transformTo stype=powered 
         powered ghost > transformTo stype=hungry
-        power hungry  > killSprite
-        ghost powered > killSprite
+        power hungry  > killSprite scoreChange=5
+        ghost powered > killSprite scoreChange=1
         hungry ghost  > killSprite
-        food pacman > killSprite
+        food pacman > killSprite scoreChange=1
         moving wall > stepBack        
         moving EOS  > wrapAround        
         

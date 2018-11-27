@@ -10,7 +10,7 @@ BasicGame
            
     InteractionSet
         inertial wall > wallBounce 
-        pad avatar    > killSprite
+        pad avatar    > killSprite scoreChange=1
         
     LevelMapping
         G > pad
